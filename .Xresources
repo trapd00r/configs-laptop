@@ -1,0 +1,310 @@
+/* .Xresources | trapd00r.se */
+/*#include "/home/scp1/configs/trapd00r.xcolors"
+*/
+ratmenu*font:                     -nil-profont-medium-r-normal--29-290-72-72-c-160-iso8859-1
+ratmenu*fgcolor:                  #eb122e
+ratmenu*bgcolor:                  #080808
+ratmenu*style:                    dreary
+ratmenu*persist:                  false
+ratmenu*align:                    center
+
+XTerm*background:                 #000000
+XTerm*foreground:                 #FFFFFF
+XTerm*colorMode:                  On
+XTerm*colorBD:                    #FFFFFF
+XTerm*colorBDMode:                On
+XTerm*colorUL:                    #FFFFFF
+XTerm*colorULMode:                On
+Xterm*dynamicColors:              On
+
+/* terminal stuff */
+XTerm*metaSendsEscape:            True
+XTerm*vt100.scrollBar:            False
+XTerm*multiScroll:                on
+XTerm*jumpScroll:                 on
+xterm*SaveLines:                  2500
+
+/* eyecandy */
+XTerm*scrollBar:                  false
+
+/* colors */
+URxvt.shiva.background:           #121212
+URxvt.shiva.foreground:           #FFFFFF
+URxvt.shiva.cursorColor:          #EB122E
+URxvt.shiva.cursorColor2:         #252525
+URxvt.shiva.colorIT:              #FFFFFF
+URxvt.shiva.colorBD:              #FFFFFF
+URxvt.shiva.colorUL:              #FF8F00
+URxvt.shiva.colorRV:              #333333
+URxvt.shiva.underlineColor:       #0E0E0E
+URxvt.shiva.borderColor:          #0E0E0E
+URxvt.shiva.pointerColor:         #252525
+URxvt.shiva.pointerColor2:        #0092FF
+
+URxvt.india.background:           #030303
+URxvt.india.foreground:           #FFFFFF
+URxvt.india.cursorColor:          #EB122E
+URxvt.india.cursorColor2:         #252525
+!URxvt.india.colorIT:              #FFFFFF
+!URxvt.india.colorBD:              #FFFFFF
+URxvt.india.colorUL:              #FF8F00
+URxvt.india.colorRV:              #333333
+URxvt.india.underlineColor:       #cb1c13
+URxvt.india.pointerColor:         #cb1c13
+URxvt.india.borderColor:          #0E0E0E
+/* fonts */
+URxvt.shiva*font:                  -windows-montecarlo-medium-r-normal--11-110-72-72-c-60-microsoft-cp1252
+URxvt.shiva*boldFont:              -windows-montecarlo-bold-r-normal--11-110-72-72-c-60-microsoft-cp1252
+URxvt.shiva*italicFont:            -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
+
+URxvt.india*font:                  -windows-montecarlo-medium-r-normal--11-110-72-72-c-60-microsoft-cp1252
+URxvt.india*boldFont:              -windows-montecarlo-bold-r-normal--11-110-72-72-c-60-microsoft-cp1252
+URxvt.india*italicFont:            -nil-profont-medium-r-normal--10-100-72-72-c-50-iso8859-1
+
+
+
+!URxvt.india*font:                  -*-profont-*-*-*-*-11-*-*-*-*-*-*-*
+!URxvt.india*boldFont:              -nil-profont-medium-r-normal--15-150-72-72-c-70-iso8859-1
+/* matches */
+URxvt.shiva.underlineURLs:        false
+URxvt.shiva.urlLauncher:          /usr/bin/firefox
+URxvt.shiva.matcher.button:       1
+URxvt.shiva.cutchars:             "()*,<>[]{}|'"
+URxvt.shiva.matcher.pattern.1:    \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.shiva.matcher.launcher.1:   /usr/bin/firefox
+URxvt.shiva.matcher.pattern.2:    \\B(/\\S+?):(\\d+)(?=:|$)
+URxvt.shiva.matcher.launcher.2:   gvim +$2 $1
+
+URxvt.india.underlineURLs:        false
+URxvt.india.urlLauncher:          /usr/bin/firefox
+URxvt.india.matcher.button:       1
+URxvt.india.cutchars:             "()*,<>[]{}|'"
+URxvt.india.matcher.pattern.1:    \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.india.matcher.launcher.1:   /usr/bin/firefox
+URxvt.india.matcher.pattern.2:    \\B(/\\S+?):(\\d+)(?=:|$)
+/* libs */
+URxvt.shiva.perl-lib:             /usr/lib/urxvt/perl
+URxvt.shiva.perl-ext-common:      default,matcher
+URxvt.shiva.perl-eval:            $^O
+
+URxvt.india.perl-lib:             /usr/lib/urxvt/perl
+URxvt.india.perl-ext-common:      default,matcher
+URxvt.india.perl-eval:            $^O
+/* perl magic */
+URxvt.selection.pattern-0:        ( at .*? line \\d+[,.])
+URxvt.selection-autotransform.0:  s/^ at (.*?) line (\\d+)[,.]$/:e \\Q$1\E\\x0d:$2\\x0d/
+
+/* terminal stuff */
+URxvt.shiva.scrollKey:            true
+URxvt.shiva.scrollWithBuffer:     true
+URxvt.shiva.scrollBack:           true
+URxvt.shiva.scrollTtyOutput:      false
+URxvt.shiva.scrollTtyKeypress:    true
+URxvt.shiva.jumpScroll:           true
+URxvt.shiva.skipScroll:           true
+URxvt.shiva.loginShell:           true
+URxvt.shiva.urgentOnBell:         true
+URxvt.shiva.saveLines:            1024
+!URxvt.shiva.termName:            rxvt-unicode
+URxvt.shiva.trippleclickwords:    true
+!URxvt.shiva.modifier:            (alt,meta,hyper,super,mod1,mod2,mod3,mod4,mod5)
+!URxvt.shiva.secondaryScreen:     true
+!URxvt.shiva.secondaryScroll:     true
+URxvt.shiva.scrollstyle:          next
+URxvt.shiva.pasteableTabs:        true
+URxvt.shiva.pointerBlank:         true
+URxvt.shiva.pointerBlankDelay:    2
+!URxvt.shiva.hold:                 0
+URxvt.shiva.chdir:                /home/scp1/devel
+
+URxvt.india.scrollKey:            true
+URxvt.india.scrollWithBuffer:     true
+URxvt.india.scrollBack:           true
+URxvt.india.scrollTtyOutput:      false
+URxvt.india.scrollTtyKeypress:    true
+URxvt.india.jumpScroll:           true
+URxvt.india.skipScroll:           true
+URxvt.india.loginShell:           true
+URxvt.india.urgentOnBell:         true
+URxvt.india.saveLines:            1024
+!URxvt.india.termName:            rxvt-unicode
+URxvt.india.trippleclickwords:    true
+!URxvt.india.modifier:            (alt,meta,hyper,super,mod1,mod2,mod3,mod4,mod5)
+!URxvt.india.secondaryScreen:     true
+!URxvt.india.secondaryScroll:     true
+URxvt.india.scrollstyle:          next
+URxvt.india.pasteableTabs:        true
+URxvt.india.pointerBlank:         true
+URxvt.india.pointerBlankDelay:    2
+!URxvt.india.hold:                 0
+
+/* eyecandy */
+!URxvt.shiva.transparent:          true
+!URxvt.shiva.shading:              9
+!URxvt.shiva.fading:              30%
+!URxvt.shiva.fadeColor:           #000000
+!URxvt.shiva.inheritPixmap:       true
+URxvt.shiva.scrollBar:            false
+!URxvt.shiva.cursorBlink:         false
+!URxvt.shiva.reverseVideo:        true
+URxvt.shiva.depth:                24
+!URxvt.internalBorder:            0
+!URxvt.externalBorder:            0
+!URxvt.shiva.borderLess:           true
+!URxvt.lineSpace:                 3
+!URxvt.shiva.title:                laleh
+/*URxvt.shiva.blendType:           (add,alphablend,allanon), (averaging,
+                                  colorize, darken, diff, dissipate, hue,
+                                  lighten, overlay, saturate, screen, sub,
+                                  tint, value)
+*/
+!URxvt.shiva.blurRadius:          (0-128)
+!URxvt.shiva.iconFile:            (file)
+
+!URxvt.india.transparent:          true
+!URxvt.india.shading:              9
+!URxvt.india.fading:              30%
+!URxvt.india.fadeColor:           #000000
+!URxvt.india.inheritPixmap:       true
+URxvt.india.scrollBar:            false
+!URxvt.india.cursorUnderline:      true
+!URxvt.india.cursorBlink:         false
+!URxvt.india.reverseVideo:        true
+URxvt.india.depth:                24
+!URxvt.india.title:                laleh
+/*URxvt.india.blendType:           (add,alphablend,allanon), (averaging,
+                                  colorize, darken, diff, dissipate, hue,
+                                  lighten, overlay, saturate, screen, sub,
+                                  tint, value)
+*/
+!URxvt.india.blurRadius:          (0-128)
+
+/* trapd00r original colorscheme */
+
+!*color0:              rgb:00/00/00
+!*color1:              rgb:4C/8C/38
+!*color2:              rgb:5F/A1/23
+!*color2:              rgb:27/CA/25
+!*color3:              rgb:A4/00/8A
+!*color4:              rgb:5f/7b/8a
+!*color5:              rgb:1D/90/B6
+!*color6:              rgb:68/68/68
+!*color7:              rgb:ff/ff/ff
+!*color8:              rgb:3C/3C/3C
+!*color9:              rgb:D6/93/00
+!*color10:             rgb:95/c7/49
+!*color11:             rgb:BB/00/5e
+!*color12              rgb:6b/7b/8a
+!*color13:             rgb:BB/7D/00
+!*color14:             rgb:36/7F/C5
+!*color15:             rgb:ff/ff/ff
+
+
+/* black */
+URxvt.shiva.color0:      #121212
+URxvt.shiva.*color8:      #484848 
+/* red */
+URxvt.shiva.color1:      #FF4747
+URxvt.shiva.color9:      #FF6767
+/* green */
+URxvt.shiva.color2:      #4D4C4C /* green => grey */
+URxvt.shiva.color10:     #B03B31 /* green => faluröd */
+/* yellow */
+URxvt.shiva.color3:      #FF8F00
+URxvt.shiva.color11:     #BDF13D
+/* blue */
+URxvt.shiva.color4:      #1165E9
+URxvt.shiva.color12:     #5496FF
+/* purple */
+URxvt.shiva.color5:      #89005A 
+URxvt.shiva.color13:     #B50077
+/* cyan */
+URxvt.shiva.color6:      #CB1C13 /* cyan => red */ /* 47E0FF */
+URxvt.shiva.color14:     #6BE603 /* cyan => green */
+/* white */
+URxvt.shiva.color7:      #FFFFFF
+URxvt.shiva.color15:     #DEDEDE
+/* orange */
+URxvt.shiva.color16:     #FFB000
+
+
+URxvt.india.color0:      #030303
+URxvt.india.*color8:     #1C1C1C 
+/* red */
+URxvt.india.color1:      #FF4747
+URxvt.india.color9:      #FF6767
+/* green */
+URxvt.india.color2:      #2b4626/* green => grey */
+URxvt.india.color10:     #B03B31 /* green => faluröd */
+/* yellow */
+URxvt.india.color3:      #FF8F00
+URxvt.india.color11:     #BDF13D
+/* blue */
+URxvt.india.color4:      #1165E9
+URxvt.india.color12:     #5496FF
+/* purple */
+URxvt.india.color5:      #aef7a4 # light green 
+URxvt.india.color13:     #B50077
+/* cyan */
+URxvt.india.color6:      #CB1C13 /* cyan => red */ /* 47E0FF */
+URxvt.india.color14:     #6BE603 /* cyan => green */
+/* white */
+URxvt.india.color7:      #FFFFFF
+URxvt.india.color15:     #DEDEDE
+/* orange */
+URxvt.india.color16:     #FFB000
+
+mplay*background:        #ffffff
+mplay*foreground:        #cb1c13
+mplay*scrollbar:         false
+mplay*color0:            #000000
+mplay*color1:            #93a0b2
+
+
+XFontSel*sampleText.background:       TEXTBG
+XFontSel*menu*showUnselectable:       false
+XFontSel*MenuButton.shadowWidth:      0
+XFontSel*Toggle*ToggleStyle:          check
+XFontSel*MenuButton*Justify:          left
+XFontSel*MenuButton*MenuButtonStyle:  select    
+
+.xfontsel.pane.commandBox.quitButton.background:  #252525
+.xfontsel.pane.commandBox.quitButton.foreground:  snow
+.xfontsel.pane.commandBox.ownButton.background:   orange3
+.xfontsel.pane.commandBox.ownButton.foreground:   snow
+.xfontsel.pane.commandBox.countLabel.background:  snow
+.xfontsel.pane.viewPort.sampleText.background:    #252525
+.xfontsel.pane.viewPort.sampleText.foreground:    snow
+.xfontsel.pane.fieldBox.field0.background:        #252525
+.xfontsel.pane.fieldBox.field0.foreground:        snow
+.xfontsel.pane.fieldBox.field1.background:        #252525
+.xfontsel.pane.fieldBox.field1.foreground:        snow
+.xfontsel.pane.fieldBox.field2.background:        #252525
+.xfontsel.pane.fieldBox.field2.foreground:        snow
+.xfontsel.pane.fieldBox.field3.background:        #252525
+.xfontsel.pane.fieldBox.field3.foreground:        snow
+.xfontsel.pane.fieldBox.field4.background:        #252525
+.xfontsel.pane.fieldBox.field4.foreground:        snow
+.xfontsel.pane.fieldBox.field5.background:        #252525
+.xfontsel.pane.fieldBox.field5.foreground:        snow
+.xfontsel.pane.fieldBox.field6.background:        #252525
+.xfontsel.pane.fieldBox.field6.foreground:        snow
+.xfontsel.pane.fieldBox.field7.background:        #252525
+.xfontsel.pane.fieldBox.field7.foreground:        snow
+.xfontsel.pane.fieldBox.field8.background:        #252525
+.xfontsel.pane.fieldBox.field8.foreground:        snow
+.xfontsel.pane.fieldBox.field9.background:        #252525
+.xfontsel.pane.fieldBox.field9.foreground:        snow
+.xfontsel.pane.fieldBox.field10.background:       #252525
+.xfontsel.pane.fieldBox.field10.foreground:       snow
+.xfontsel.pane.fieldBox.field11.background:       #252525
+.xfontsel.pane.fieldBox.field11.foreground:       snow
+.xfontsel.pane.fieldBox.field12.background:       #252525
+.xfontsel.pane.fieldBox.field12.foreground:       snow
+.xfontsel.pane.fieldBox.field13.background:       #252525
+.xfontsel.pane.fieldBox.field13.foreground:       snow
+.xfontsel.pane.fieldBox*foreground:               #000000
+.xfontsel.pane.fieldBox.MenuButton.borderWidth:   1
+.xfontsel.pane.fieldBox.MenuButton.internalHeight:1
+.xfontsel.pane.fieldBox.MenuButton.internalWidth: 2
+.xfontsel.pane.fieldBox.MenuButton.shapeStyle:    rectangle
