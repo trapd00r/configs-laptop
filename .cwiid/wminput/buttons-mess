@@ -24,7 +24,7 @@ Classic.Right           = KEY_RIGHT
 
 Classic.Minus           = KEY_2
 Classic.Plus            = KEY_1
-Classic.Home            = KEY_F3
+Classic.Home            = KEY_ENTER
 Classic.A               = KEY_LEFTCTRL
 Classic.B               = KEY_SPACE
 Classic.X               = KEY_LEFTALT

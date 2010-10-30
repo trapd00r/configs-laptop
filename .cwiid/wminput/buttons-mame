@@ -16,19 +16,21 @@ Nunchuk.Z               = KEY_LEFTALT
 Plugin.nunchuk_acc.X    = REL_X
 Plugin.nunchuk_acc.Y    = REL_Y
 
-Classic.Up              = KEY_UP
-Classic.Down    = KEY_DOWN
-Classic.Left    = KEY_LEFT
-Classic.Right   = KEY_RIGHT
 
-Classic.Minus   = KEY_2
-Classic.Plus    = KEY_1
-Classic.Home    = KEY_F3
-Classic.A               = KEY_LEFTCTRL
-Classic.B               = KEY_LEFTALT
-Classic.X               = KEY_SPACE
-Classic.Y               = KEY_LEFTSHIFT
-Classic.ZL              = KEY_5
-Classic.ZR              = KEY_P
+
+Classic.Up              = KEY_UP
+Classic.Down            = KEY_DOWN
+Classic.Left            = KEY_LEFT
+Classic.Right           = KEY_RIGHT
+
+Classic.Minus           = KEY_5
+Classic.Plus            = KEY_1
+Classic.Home            = KEY_ENTER
+Classic.A               = KEY_Q
+Classic.B               = KEY_W
+Classic.X               = KEY_E
+Classic.Y               = KEY_R
+Classic.ZL              = KEY_T
+Classic.ZR              = KEY_Y
 Classic.L               = KEY_Z
 Classic.R               = KEY_X
